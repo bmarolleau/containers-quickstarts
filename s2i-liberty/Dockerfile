@@ -39,7 +39,7 @@ COPY ./s2i/bin/ $STI_SCRIPTS_PATH
  #   mkdir -p $WORKDIR/config && \
  #   chown -R 1001:0 $WORKDIR && \
  #   chmod -R g+rw $WORKDIR && \
-RUN   ln $STI_SCRIPTS_PATH/assemble-runtime $STI_SCRIPTS_PATH/assemble    
+ #   ln $STI_SCRIPTS_PATH/assemble-runtime $STI_SCRIPTS_PATH/assemble    
 
 COPY ./placeholder.txt $WORKDIR/artifacts 
 COPY ./placeholder.txt $WORKDIR/config 
